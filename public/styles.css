@@ -1,0 +1,133 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    text-align: center;
+    background-color: #17a2b8;
+    background-image: url("./bg.jpg");
+    background-position: center;
+}
+#vue-app {
+    padding: 0 50px;
+    /* background-color: #17a2b8;
+    background-image: url("./bg.jpg");
+    background-position: center; */
+    height: 100%;
+}
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+td {
+    padding: 30px;
+    width: 15px;
+    height: 20px;
+    text-align: center;
+}
+tr:nth-child(2) {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+tr:nth-child(1) td:nth-child(2) {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+tr:nth-child(2) td:nth-child(2) {
+    border: 1px solid black;
+}
+tr:nth-child(3) td:nth-child(2) {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+td:hover {
+    cursor: pointer;
+}
+button:hover {
+    cursor: pointer;
+}
+.wrapper {
+    background-color: #fff;
+    max-width: 500px;
+    width: 100%;
+    padding: 50px;
+    box-shadow: 0px 0px 30px #aaa;
+    height: 100%;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+#chat {
+    position: fixed;
+    width: 400px;
+    height: 500px;
+    padding: 10px;
+    left: calc(100% - 450px);
+    top: calc(100% - 520px);
+    background: #fff;
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 0px 0px 30px #aaa;
+}
+#chat #messages {
+    height: 405px;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    text-align: left;
+    list-style: none;
+    padding: 5px;
+    overflow-y: scroll;
+}
+#chat #messages li {
+    padding: 5px;
+    border-radius: 7px;
+    margin: 3px 0;
+    overflow-x: hidden;
+}
+#chat #messages li:last-child {
+    margin-bottom: 50px;
+    border-bottom: 1px solid #fff;
+}
+#chat #messages li span {
+    font-size: 13px;
+    font-style: italic;
+    opacity: 0.6;
+}
+#chat #messages li p {
+    margin: 0;
+}
+#chat input[type=text] {
+    width: calc(100% - 56px);
+}
+#chat .title {
+    display: inline-block;
+    width: calc(100% - 50px);
+    margin: 0px;
+}
+#chat #toggle {
+    background: inherit;
+    border: 1px solid #aaa;
+    color: #aaa;
+    padding: 5px 10px;
+}
+#chat #toggle:hover {
+    background: #eee;
+    border: 1px solid #666;
+    color: #666;
+    padding: 5px 10px;
+}
+.color1 { color: rgb(153, 51, 51); background-color: rgba(153, 51, 51, 0.1) }
+.color2 { color: rgb(102, 0, 102); background-color: rgba(102, 0, 102, 0.1) }
+.color3 { color: rgb(0, 51, 0); background-color: rgba(0, 51, 0, 0.1) }
+.color4 { color: rgb(0, 102, 153); background-color: rgba(0, 102, 153, 0.1) }
+.color5 { color: rgb(204, 51, 0); background-color: rgba(204, 51, 0, 0.1) } 
+.serverColor { color: #000; background-color: rgba(0, 0, 0, 0.1)}
